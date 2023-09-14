@@ -34,7 +34,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "abk",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -48,7 +48,6 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
@@ -61,13 +60,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "6500kb",
+                  "maximumError": "7mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2000kb",
+                  "maximumError": "4000kb"
                 }
               ],
               "outputHashing": "all"
@@ -111,13 +110,15 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         }
       }

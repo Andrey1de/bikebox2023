@@ -1,0 +1,29 @@
+
+$header-height: 12vh;
+$footer-height: 18vh;
+
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+  }
+  
+  header {
+    background: blue;
+    padding: 1rem;
+    height: $header-height;
+  }
+  
+  main {
+    background: cyan;
+    color: #444;
+    padding: 1rem;
+  }
+  
+  footer {
+    background: gray;
+    padding: 1rem;
+    height: $footer-height;
+  }
